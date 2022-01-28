@@ -10,7 +10,7 @@ function NavBar() {
         <header className="header">
           <Col md={2}>
             <div>
-              <a href="/home">
+              <a href="/">
                 <img
                   id="img-avatar"
                   src="/img/ben-avatar.png"
