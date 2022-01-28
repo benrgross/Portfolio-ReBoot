@@ -3,7 +3,7 @@ import { Container } from "react-bootstrap";
 
 function Home() {
   return (
-    <Container className="content content__home">
+    <div className="content content__home">
       <h3 className="content__home-h3">Hello, I'm Ben</h3>
       <p className="content__home--p">
         I'm Full Stack Web Developer with a certificate in Full Stack Web
@@ -30,7 +30,7 @@ function Home() {
         of information so that I may more effectively develop my skills as a
         coder as well as contribute to the business in meaningful ways.
       </p>
-    </Container>
+    </div>
   );
 }
 

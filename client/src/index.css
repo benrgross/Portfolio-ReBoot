@@ -80,10 +80,16 @@ code {
     padding-right: 1rem;
     width: 100%;
   }
+  .content__home--p {
+    width: 26rem;
+  }
 }
 
 .content__home-h3 {
   margin-bottom: 2rem;
+}
+
+.content__home--p {
 }
 /* .header__section--media {
   flex-shrink: 0;
