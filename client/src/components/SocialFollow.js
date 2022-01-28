@@ -6,7 +6,7 @@ function SocialFallow() {
   return (
     <div className="social__cont">
       <a
-        href="linkedin.com/in/ben-gross-b5a91192/"
+        href="https://linkedin.com/in/ben-gross-b5a91192/"
         className="social__icon social__linkedIn"
       >
         <FontAwesomeIcon
@@ -17,7 +17,7 @@ function SocialFallow() {
         />
       </a>
       <a
-        href="github.com/benrgross"
+        href="https://github.com/benrgross"
         className="social__icon social__gitHub"
         alt="github icon"
       >
