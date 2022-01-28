@@ -1,5 +1,5 @@
 import React from "react";
-import { Container } from "react-bootstrap";
+import SocialFollow from "../components/SocialFollow";
 
 function Home() {
   return (
@@ -28,8 +28,9 @@ function Home() {
         While there is an overwhelming amount of information out there to learn,
         I am looking for an employer who can help guide me down the rabbit holes
         of information so that I may more effectively develop my skills as a
-        coder as well as contribute to the business in meaningful ways.
+        coder, as well as contribute to the business in meaningful ways.
       </p>
+      <SocialFollow />
     </div>
   );
 }
