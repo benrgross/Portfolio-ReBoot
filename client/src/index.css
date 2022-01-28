@@ -81,6 +81,10 @@ code {
     width: 100%;
   }
 }
+
+.content__home-h3 {
+  margin-bottom: 2rem;
+}
 /* .header__section--media {
   flex-shrink: 0;
   margin-right: 4.1493775934%;
