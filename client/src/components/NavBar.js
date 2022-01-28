@@ -1,7 +1,7 @@
 import React from "react";
 import "../index.css";
 
-import { Row, Col, ListGroup, Container, Nav } from "react-bootstrap";
+import { Row, Col, ListGroup, Container } from "react-bootstrap";
 
 function NavBar() {
   return (
