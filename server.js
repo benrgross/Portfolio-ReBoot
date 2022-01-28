@@ -23,8 +23,5 @@ mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/portfolio", {
 
 // Start the API server
 app.listen(PORT, function () {
-  console.log(`🌎  "devDependencies": {
-    "concurrently": "^4.1.0",
-    "nodemon": "^1.18.7"
-  },==> API Server now listening on PORT ${PORT}!`);
+  console.log(`🌎  ==> API Server now listening on PORT ${PORT}!`);
 });
