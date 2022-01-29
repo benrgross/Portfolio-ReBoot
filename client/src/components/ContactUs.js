@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import { Row, Col, Container, Form, Button } from "react-bootstrap";
-import Recaptcha from "react-recaptcha";
+import ReCAPTCHA from "react-google-recaptcha";
 import emailjs from "@emailjs/browser";
 
 export const ContactUs = () => {
@@ -56,6 +56,10 @@ export const ContactUs = () => {
           <Form.Label className="form__label">Message</Form.Label>
           <Form.Control as="textarea" name="message" />
         </Form.Group>
+        <ReCAPTCHA
+          sitekey="6Lc8U0UeAAAAAKoFSPlivNyaiRMfyN_NY6OHP5CW"
+          //   onChange={onChange}
+        />
         <Button
           className="contact__button btn-primary"
           type="submit"
@@ -63,12 +67,6 @@ export const ContactUs = () => {
         >
           Submit
         </Button>
-        <Recaptcha
-          sitekey="6Lc8U0UeAAAAAKoFSPlivNyaiRMfyN_NY6OHP5CW"
-          render="explicit"
-          //   onloadCallback={this.recaptchaLoaded}
-          //   verifyCallback={this.verifiedRecaptcha}
-        />
       </Form>
     </Container>
   );
