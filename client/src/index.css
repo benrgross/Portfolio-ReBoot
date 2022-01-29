@@ -127,6 +127,7 @@ code {
 
 .contact__button {
   margin-top: 2rem;
+  margin-bottom: 2rem;
   font-family: "Rubik", sans-serif !important;
   font-weight: 600;
   letter-spacing: 0.0625rem;
@@ -140,4 +141,13 @@ code {
   letter-spacing: 0.0625rem;
   text-transform: uppercase;
   margin-top: 10px;
+}
+
+.contact_callout {
+  font-family: "Rubik", sans-serif !important;
+  font-weight: 600;
+  color: #5e5e5e;
+  letter-spacing: 0.0625rem;
+
+  width: 60%;
 }
