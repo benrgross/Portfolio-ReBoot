@@ -27,16 +27,11 @@ export const ContactUs = () => {
 
   return (
     <Container className="contact__cont">
-      <Form className="contact__form" onSubmit={sendEmail}>
+      <Form className="contact__form" onSubmit={sendEmail} ref={form}>
         <Row className="mb-3">
-          <Form.Group
-            as={Col}
-            controlId="formGridEmail"
-            ref={form}
-            className="mb-3"
-          >
+          <Form.Group as={Col} className="mb-3" controlId="formGridEmail">
             <Form.Label className="form__label">Name</Form.Label>
-            <Form.Control type="text" name="user_name" />
+            <Form.Control type="text" name="from_name" />
           </Form.Group>
           <Form.Group
             as={Col}
@@ -45,7 +40,7 @@ export const ContactUs = () => {
             className="mb-3"
           >
             <Form.Label className="form__label">Email</Form.Label>
-            <Form.Control type="email" name="user_email" />
+            <Form.Control type="email" name="reply_to" />
           </Form.Group>
         </Row>
         <Form.Group>
