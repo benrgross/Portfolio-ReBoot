@@ -1,5 +1,6 @@
 import React, { useRef } from "react";
 import { Row, Col, Container, Form, Button } from "react-bootstrap";
+import Recaptcha from "react-recaptcha";
 import emailjs from "@emailjs/browser";
 
 export const ContactUs = () => {
@@ -7,6 +8,10 @@ export const ContactUs = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
+    console.log(form.current.reply_to.value);
+
+    // const re = /^\S+@\S+\.\S+$/;
+    // re.test(form.current.reply_to.value);
 
     emailjs
       .sendForm(
@@ -58,6 +63,12 @@ export const ContactUs = () => {
         >
           Submit
         </Button>
+        <Recaptcha
+          sitekey="6Lc8U0UeAAAAAKoFSPlivNyaiRMfyN_NY6OHP5CW"
+          render="explicit"
+          //   onloadCallback={this.recaptchaLoaded}
+          //   verifyCallback={this.verifiedRecaptcha}
+        />
       </Form>
     </Container>
   );
